@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:weather_app/MediaQuery/mq_values.dart';
+
+import '../../locationScreen/searchScreen.dart';
 
 class ViatherAppSavedCity extends StatefulWidget {
   const ViatherAppSavedCity({super.key});
@@ -28,11 +31,19 @@ class _ViatherAppSavedCityState extends State<ViatherAppSavedCity> {
               ),
             ),
             Padding(
-                padding: const EdgeInsets.only(right: 20),
+              padding: const EdgeInsets.only(right: 20),
+              child: InkWell(
+                onTap: () {
+                  Get.to(
+                    SearchScreen(),
+                  );
+                },
                 child: Icon(
                   Icons.add,
                   color: Colors.white,
-                )),
+                ),
+              ),
+            ),
           ],
         ),
         Container(

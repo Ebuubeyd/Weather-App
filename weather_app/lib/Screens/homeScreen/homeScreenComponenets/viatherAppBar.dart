@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../locationScreen/searchScreen.dart';
 
 class ViatherAppBar extends StatefulWidget {
   const ViatherAppBar({super.key});
@@ -30,7 +33,11 @@ class _ViatherAppBarState extends State<ViatherAppBar> {
         ),
         const Spacer(),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Get.to(
+              SearchScreen(),
+            );
+          },
           icon: const Icon(
             Icons.search,
             color: Colors.white,
