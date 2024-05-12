@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MainPageCollector extends StatefulWidget {
-  const MainPageCollector({Key? key}) : super(key: key);
+  const MainPageCollector({super.key});
 
   @override
   State<MainPageCollector> createState() => _MainPageCollectorState();
@@ -35,7 +35,7 @@ class _MainPageCollectorState extends State<MainPageCollector> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
@@ -46,7 +46,7 @@ class _MainPageCollectorState extends State<MainPageCollector> {
           stops: [0.3, 0.9],
         ),
       ),
-      child: Scaffold(
+      child: const Scaffold(
         backgroundColor: Colors.transparent,
         body: SafeArea(
           child: Column(

@@ -63,6 +63,11 @@ flutter:
   assets:
     - assets/
     - assets/icons/
+    - assets/icons/sun/
+    - assets/icons/cloud/
+    - assets/icons/rain/
+    - assets/icons/night/
+    - assets/icons/wind/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
